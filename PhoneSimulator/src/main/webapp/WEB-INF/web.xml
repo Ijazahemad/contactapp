@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>PhoneSimulator</display-name>
+  <welcome-file-list>
+    <welcome-file>home</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>contactDetailsInput</servlet-name>
+  	<jsp-file>/WEB-INF/AddContact.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+ 	<servlet-name>contactDetailsInput</servlet-name>
+ 	<url-pattern>/contactInput</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>contactDatabaseEntry</servlet-name>
+  	<jsp-file>/WEB-INF/AddContactToDateBase.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>contactDatabaseEntry</servlet-name>
+ 	<url-pattern>/contactDataBaseEntry</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>DisplayAllContacts</servlet-name>
+  	<jsp-file>/WEB-INF/DisplayAllContacts.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>DisplayAllContacts</servlet-name>
+ 	<url-pattern>/allContact</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>HomePage</servlet-name>
+  	<jsp-file>/WEB-INF/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>HomePage</servlet-name>
+ 	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>header</servlet-name>
+  	<jsp-file>/WEB-INF/header.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>header</servlet-name>
+ 	<url-pattern>/header</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>navigation</servlet-name>
+  	<jsp-file>/WEB-INF/navigation.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>navigation</servlet-name>
+ 	<url-pattern>/navigation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SearchInput</servlet-name>
+  	<jsp-file>/WEB-INF/SearchContact.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>SearchInput</servlet-name>
+ 	<url-pattern>/searchInput</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>SearchContact</servlet-name>
+  	<jsp-file>/WEB-INF/SearchContactInDatabase.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>SearchContact</servlet-name>
+ 	<url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>EditContactInput</servlet-name>
+  	<jsp-file>/WEB-INF/EditContact.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>EditContactInput</servlet-name>
+ 	<url-pattern>/editInput</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>DeleteContact</servlet-name>
+  	<jsp-file>/WEB-INF/DeleteContact.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>DeleteContact</servlet-name>
+ 	<url-pattern>/deleteInput</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  	<servlet-name>EditContact</servlet-name>
+  	<jsp-file>/WEB-INF/EditContactInDateBase.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>EditContact</servlet-name>
+ 	<url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+</web-app>
